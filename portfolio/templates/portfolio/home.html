@@ -1,0 +1,47 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+        <title>My portfolio</title>
+    </head>
+   
+    <body>
+
+        <div class="frontpage">
+        <h2 class="mt-5">This is my portfolio demo page</h2>
+        <br>
+   
+
+    <p id="intro">Erat velit scelerisque in dictum non consectetur a. Egestas egestas fringilla phasellus faucibus. 
+      Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Vel quam elementum pulvinar etiam 
+      non quam lacus suspendisse faucibus. Nibh nisl condimentum id venenatis a condimentum vitae. 
+      Adipiscing elit ut aliquam purus sit amet luctus.</p>
+    </div>
+
+
+     <div class="row">
+        {% for project in projects %}
+        <div class="col-sm-2 col-sm-2">
+      
+          {% if project.url %}
+          <a href="{{ project.url }}">
+            <img src="{{ project.image.url }}" class="img-fluid mb-2">
+          </a>
+          {% else %}
+      
+          <img src="{{ project.image.url }}" class="img-fluid mb-2">
+          {% endif %}
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+      
+        </div>
+        {% endfor %}
+      </div>
+     
+      </html>
+{% endblock %}
+    
+  
+

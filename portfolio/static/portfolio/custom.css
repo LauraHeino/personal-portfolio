@@ -1,0 +1,62 @@
+body {
+    font-family: Montserrat;
+    background-color: rgb(200, 190, 190);
+}
+
+a {
+    color: rgb(210, 200, 180);
+}
+
+a:hover {
+    color: white;
+}
+
+h2, h3 {
+    font-family: Dosis;
+}
+
+div {
+    margin: auto;
+    text-align: center;
+
+}
+
+.navbar {
+    background-color:  rgb(40, 40, 40);
+}
+
+.navbar-nav .nav-link {
+    background-color: rgb(40, 40, 40);
+    color: rgb(230, 205, 195);
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgb(40, 40, 40);
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+
+.navbar-brand {
+    background-color: transparent;
+}
+
+
+.row {
+    background-color: #eee;
+    border: solid grey 1px;
+    margin: 30px;
+    padding: 10px;
+}
+
+#intro {
+    text-align: center;
+}
+
+.frontpage {
+    width: 75%;
+}
+
+.about {
+    width: 50%;
+    margin: auto;
+}
